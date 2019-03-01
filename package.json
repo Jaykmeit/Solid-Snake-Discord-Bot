@@ -1,15 +1,13 @@
 {
-	"name": "Solid Snake Bot",
-	"version": "1.0.0",
-	"description": "",
-	"main": "bot.js",
-	"scripts": {
-		"test": "node bot.js"
-	},
-	"author": "Jaykmeit",
-	"license": "ISC",
-	"dependencies": {
-		"discord.js": "^11.4.2",
-		"discord.js-commando": "^0.10.0"
-	}
+  "name": "Solid Snake Bot",
+  "description": "Not Assigned",
+  "version": "1.0.1",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
+  }
 }
