@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
-bot.on('message', (msg) => {
+client.on('message', (msg) => {
 	if (msg.content === '!codec') {
 			var replies = [
 			"Agacharse y tumbarse generan mucha mayor estabilidad a la hora de disparar que estando de pie.",
@@ -44,10 +44,10 @@ bot.on('message', (msg) => {
 	}
 });
 
-bot.on('ready', () => {
+client.on('ready', () => {
 	console.log('Bot is now connected');
 
-	bot.channels.find(x => x.name === 'general').send("Al habla Snake. Os hice esperar, ¿eh?");
+	client.channels.find(x => x.name === 'general').send("Al habla Snake. Os hice esperar, ¿eh?");
 });
 
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
