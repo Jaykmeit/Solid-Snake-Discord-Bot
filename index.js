@@ -41,4 +41,4 @@ bot.on('ready', () => {
 	bot.channels.find(x => x.name === 'general').send("Al habla Snake. Os hice esperar, ¿eh?");
 });
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
